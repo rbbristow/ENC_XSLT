@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/Sevigneodd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- Très bon travail -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Lettres de Madame de Sévigné, de sa famille, et de ses amis, II,
+               1671-1672</title>
+            <title type="subtitle">Edition ornée de vingt-cinq portraits dessinés par Devéria,
+               augmentée de plusieurs lettres inédites, des cent-cinq lettres publiées en 1814 par
+               Klostermann, des notes et notices de Grouvelle et des réflexions de l'abbé de
+               Vauxelles ; précédées d'une nouvelle notice biographique sur Mme de Sévigné et
+               accompagnées de notes par M. Gault de Saint-Germain</title>
+            <author resp="main">
+               <forename>Marie de Rabutin-Chantal</forename>
+               <surname>Marquise de Sévigné</surname>
+            </author>
+            <author resp="contributor">
+               <forename>Pauline de Grignan</forename>
+               <surname>Marquise de Simiane</surname>
+            </author>
+            <editor>
+               <forename>Pierre-Marie</forename>
+               <surname>Gault de Saint-Germain</surname>
+            </editor>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un devoir du Master TNAH</resp>
+               <persName>
+                  <forename>Rebecca</forename>
+                  <surname>Bristow</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>École nationale des Chartes, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title/>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Dalibon</publisher>
+                  <date when-iso="1823">1823</date>
+                  <pubPlace>Paris</pubPlace>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k6317685j/f40.image"
+                     >Bibliothèque Nationale de France, département Littérature et art</distributor>
+                  <idno>Z-14886</idno>
+                  <availability>
+                     <licence>Domaine Public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Lettres de Madame de Sévigné, de sa famille, et de ses amis, II,
+                     1671-1672</title>
+                  <biblScope unit="correspondence">Lettres de Madame de Sévigné, de sa famille, et
+                     de ses amis</biblScope>
+                  <biblScope unit="volume" n="2">Tome II</biblScope>
+                  <biblScope unit="letter" from="150" to="153">letters 150-153</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">français</language>
+         </langUsage>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Paris">
+                  <placeName>Paris</placeName>
+               </place>
+               <place xml:id="Bretagne">
+                  <placeName>Bretagne</placeName>
+               </place>
+               <place xml:id="LArsenal">
+                  <placeName>L'Arsenal</placeName>
+               </place>
+               <place xml:id="LuxembourgPalais">
+                  <placeName>Palais du Luxembourg</placeName>
+               </place>
+               <place xml:id="StGermainEnLaye">
+                  <placeName>Château de Saint-Germain-en-Laye</placeName>
+               </place>
+               <place xml:id="Chantilly">
+                  <placeName>Château de Chantilly</placeName>
+               </place>
+               <place xml:id="Provence">
+                  <placeName>Provence</placeName>
+               </place>
+               <place xml:id="ChezLaRochefoucauld">
+                  <placeName>Chez <persName ref="#LaRochefoucauld">M. de La
+                     Rochefoucauld</persName></placeName>
+               </place>
+               <place xml:id="Liancourt">
+                  <placeName>Liancourt</placeName>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson type="Sevigne">
+               <person sex="femme" xml:id="SevigneMarquise">
+                  <persName>
+                     <forename>Marie de Rabutin-Chantal</forename>
+                     <surname>de Sévigné</surname>
+                     <roleName>Marquise de Sévigné</roleName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="GrignanComtesse">
+                  <!-- Il aurait été bien de signaler que c'est la fille de madame de Sévigné-->
+                  <persName>
+                     <forename>Françoise Marguerite</forename>
+                     <surname>de Sévigné</surname>
+                     <roleName>Comtesse de Grignan</roleName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="SevigneBaron">
+                  <persName>
+                     <forename>Charles</forename>
+                     <surname>de Sévigné</surname>
+                     <roleName>Baron de Sévigné</roleName>
+                  </persName>
+               </person>
+            </listPerson>
+            <listPerson type="Autres">
+               <person sex="femme" xml:id="Brissac">
+                  <persName>
+                     <surname>Brissac (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="NinonDeLenclos">
+                  <persName>
+                     <forename>Anne</forename>
+                     <addName type="surnom">Ninon de l'Enclos</addName>
+                     <surname>de l'Enclos</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="LaRochefoucauld">
+                  <persName>
+                     <forename>François VI</forename>
+                     <surname>de La Rochefoucauld</surname>
+                     <roleName>Duc de La Rochefoucauld</roleName>
+                     <roleName>Prince de Marcillac</roleName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="LaFayette">
+                  <persName>
+                     <forename>Marie-Madeleine</forename>
+                     <surname>Pioche de la Vergne</surname>
+                     <roleName>Comtesse de La Fayette</roleName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Montalais">
+                  <persName>
+                     <surname>Montalais (Madame de)</surname>
+                     <addName type="surnom">La Marans</addName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Henriette_dAngleterre">
+                  <persName>
+                     <forename>Henriette Anne</forename>
+                     <surname>Stuart</surname>
+                     <addName>Henriette d'Angleterre</addName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Schomberg">
+                  <persName>
+                     <surname>Schomberg (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Coulanges">
+                  <persName>
+                     <surname>Coulanges (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="LaTroche">
+                  <persName>
+                     <surname>La Troche (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Meri">
+                  <persName>
+                     <surname>Méri (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Champmesle">
+                  <persName>
+                     <forename>Marie</forename>
+                     <surname>Desmares</surname>
+                     <addName type="surnom">La Champmeslé</addName>
+                     <note>Comédienne.</note>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="Longueville">
+                  <persName>
+                     <surname>Longueville (Monsieur de)</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="Montausier">
+                  <persName>
+                     <surname>Montausier (Monsieur de)</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="BellefondsMarechal">
+                  <persName>
+                     <roleName>Maréchal de Bellefonds</roleName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="LouisdeFrance">
+                  <persName>
+                     <forename>Louis de France</forename>
+                     <roleName>Monseigneur le Dauphin</roleName>
+                     <addName type="surnom">Le Grand Dauphin</addName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="GrandConde">
+                  <persName>
+                     <forename>Louis II</forename>
+                     <surname>de Bourbon-Condé</surname>
+                     <roleName>Duc d'Enghien</roleName>
+                     <addName type="surnom">Le Grand Condé</addName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="LouisXIV">
+                  <persName>
+                     <forename>Louis de Bourbon</forename>
+                     <roleName>Louis XIV, roi de France et de Navarre</roleName>
+                     <addName type="surnom">Sa Majesté</addName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="DHacqueville">
+                  <persName>
+                     <surname>D'Hacqueville</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="AbbeTestu">
+                  <persName>
+                     <forename>Jacques Testu</forename>
+                     <surname>de Belval</surname>
+                     <roleName>Abbé Testu</roleName>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Richelieu">
+                  <persName>
+                     <surname>Richelieu (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Ludres">
+                  <persName>
+                     <forename type="1">Marie-Élisabeth</forename>
+                     <forename type="2">Isabelle</forename>
+                     <surname>de Ludres</surname>
+                     <roleName>Marquise de Ludres</roleName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="GrignanComte">
+                  <persName><forename>François Adhémar</forename>
+                     <surname>de Monteil de Grignan</surname>
+                     <roleName>Comte de Grignan</roleName>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="LePremier">
+                  <persName><surname>Le Premier (Monsieur)</surname></persName>
+               </person>
+               <person sex="homme" xml:id="GarnierDeSalins">
+                  <persName><surname>Garnier-de-Salins</surname></persName>
+               </person>
+               <person sex="homme" xml:id="BrancasComte">
+                  <persName><roleName>Comte de Brancas</roleName></persName>
+               </person>
+               <person sex="homme" xml:id="Vatel">
+                  <persName>
+                     <forename>François</forename>
+                     <surname>Vatel</surname>
+                     <note>Maître d'hôtel de Nicolas Fouquet puis de Louis II de
+                        Bourbon-Condé.</note>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="Fouquet">
+                  <persName>
+                     <forename>Nicolas</forename>
+                     <surname>Fouquet</surname>
+                     <note>Surintendant des finances de Louis XIV.</note>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="Menars">
+                  <persName>
+                     <forename>Jean-Jacques Charron</forename>
+                     <surname>de Menars</surname>
+                     <note>Surintendant de la maison de la reine.</note>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="LaGrangeNeuvilleM">
+                  <persName>
+                     <forename>Marie</forename>
+                     <surname>La Grange-Neuville (Mademoiselle de)</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="LaGrangeNeuvilleC">
+                  <persName>
+                     <forename>Charles</forename>
+                     <surname>de La Grange-Neuville</surname>
+                  </persName>
+               </person>
+               <person sex="femme" xml:id="Frontenac">
+                  <persName>
+                     <surname>Frontenac (Madame de)</surname>
+                  </persName>
+               </person>
+               <person sex="homme" xml:id="Moreuil">
+                  <persName><surname>Moreuil</surname></persName>
+               </person>
+               <person sex="homme" xml:id="Berchoux">
+                  <persName><forename>Joseph</forename><surname>de Berchoux</surname><note>Poète et
+                        humoriste français.</note></persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" n="150">
+            <head>LETTRE CL.</head>
+            <opener>DE <persName ref="#SevigneMarquise">MADAME DE SÉVIGNÉ</persName> A <persName
+                  ref="GrignanComtesse">MADAME DE GRIGNAN</persName>. <dateline>A <placeName
+                     ref="#Paris">Paris</placeName>, <date when-iso="22-04-1671">mercredi 22 avril
+                     1671</date>.</dateline>
+            </opener>
+            <p>Avez-vous bien peur que je n'aime mieux <persName ref="#Brissac">madame de
+                  Brissac</persName> que vous ? craignez-vous, de la manière dont vous me
+               connoissez, que ses façons ne me plaisent plus que les vôtres ? croyez-vous que son
+               esprit ait retrouvé le chemin de me plaire ? avez-vous opinion que sa beauté efface
+               vos charmes ? enfin, pensez-vous qu'il y ait quelqu'un au monde qui puisse, à mon
+               goût, surpasser <persName ref="#Grignan">madame de Grignan</persName>, en me supposant
+               même dépouillée de tout l'intérêt que j'y prends ? Songez à tout cela un peu à
+               loisir, et puis soyez assurée qu'il en est justement ce que vous en croyez. Voilà
+               toute ma réponse, que vous connoîtrez par la vôtre, si vous répondez sincèrement.</p>
+            <p>Parlons un peu de votre frère, ma fille : il est d'une foiblesse à faire mal au cœur
+               ; il est tout ce qu'il plaît aux autres <note>Le <persName ref="#SevigneBaron">baron
+                     de Sévigné</persName> avoit alors 24 ans. <emph>M.</emph></note> ; il plut hier
+               à trois de ses amis de le mener souper dans un lieu d'honneur, il y fut. Ces
+               messieurs sont trop habiles pour vouloir courir la fortune ; ils disent à <persName
+                  ref="#SevigneBaron">Sévigné</persName> de payer ; je dis, payer de sa personne :
+               tout misérable qu'il est encore, il paye, et puis me vient tout conter, en disant
+               qu'il se fait mal au cœur à lui-même : je lui dis qu'il me fait mal au cœur aussi, je
+               lui fais honte ; j'ajoute que ce n'est point là la vie d'un honnête homme, qu'il
+               trouvera quelque chape-chute, et qu'à force de s'exposer il aura son fait. Je prêche
+               un peu ensuite ; il demeure d'accord de tout, et n'en fait ni plus ni moins. Il a
+               quitté <persName ref="#Champmesle">la comédienne</persName>
+               <note><persName ref="#Champmesle">La Champmeslé</persName>. (Voyez la note sur cette
+                  comédienne, lettre du 8 avril 1671.) <emph>G. D. S. G.</emph>
+               </note>, après l'avoir aimée par-ci par-là : quand il la voyoit, quand il lui
+               écrivoit, c'étoit de bonne foi; un moment après, il s'en moquoit à bride abattue.
+                  <persName ref="#NinonDeLenclos">Ninon</persName> l'a quitté : il étoit malheureux
+               quand elle l'aimoit; il est au désespoir de n'en être plus aimé, et d'autant plus
+               qu'elle n'en parle pas avec beaucoup d'estime : <said aloud="true"
+                  who="#NinonDeLenclos">C'est une âme de bouillie</said>, dit-elle, <said
+                  aloud="true" who="#NinonDeLenclos">c'est un corps de papier mouillé, c'est un cœur
+                  de citrouille fricassé dans de la neige: je vous l'ai déjà dit</said>. Elle voulut
+               l'autre jour lui faire donner les lettres de <persName ref="#Champmesle"
+                  >comédienne</persName>; il les lui donna; elle en a été jalouse; elle vouloit les
+               donner à un amant de la princesse, afin de lui faire donner quelques petits coups de
+               baudrier : il me le vint dire; je lui dis que c'étoit une infamie que de couper ainsi
+               la gorge à cette petite créature pour l'avoir aimé; qu'elle n'avoit point sacrifié
+               ses lettres, comme on vouloit le lui faire croire pour l'animer ; qu'elle les lui
+               avoit rendues ; que c'étoit une trahison basse et indigne d'un homme de qualité, et
+               que même dans les choses malhonnêtes, il y avoit de l'honnêteté à observer : il entra
+               dans mes raisons, il courut chez <persName ref="#NinonDeLenclos">Ninon</persName>, et
+               moitié par adresse, et moitié par force, il retira les lettres de cette pauvre
+               diablesse : je les ai fait brûler. Vous voyez par là combien le nom de comédienne
+               m'est de quelque chose : cela est un peu de la visionnaire de la comédie
+                  <note>Allusion au rôle de Sestian dans <emph>Les Visionnaires</emph> de Desmarets.
+                     <emph>M.</emph></note> ; elle en eût fait autant, et je fais comme elle. Mon
+               fils a conté ses folies à <persName ref="#LaRochefoucauld">M. de La
+                  Rochefoucauld</persName>, qui aime les originaux. Je lui disois l'autre jour que
+                  <persName ref="#SevigneBaron">Sévigné</persName> n'est point fou par la tête,
+               c'est par le cœur : ses sentiments sont tout vrais, sont tout faux, sont tout froids,
+               sont tout brûlants, sont tout fripons, sont tout sincères ; enfin son cœur est fou.
+               Nous rîmes fort de tout cela, et avec mon fils même, car il est de bonne compagnie,
+               et dit tôpe à tout. Nous sommes très bien ensemble, je suis sa confidente , et je
+               conserve cette vilaine qualité qui m'attire de si vilaines confessions, pour être en
+               droit de lui dire mes sentiments sur tout. Il me croit autant qu'il peut, il me prie
+               de le redresser; je le fais comme une amie: il veut venir avec moi en <placeName
+                  ref="#Bretagne">Bretagne</placeName> pour cinq ou six semaines; s'il n'y a point
+               de camp en Lorraine, je l'emmènerai. Voilà bien des folies : mais comme vous y prenez
+               intérêt, il m'a semblé qu'elles ne vous ennuieroient pas.</p>
+            <p>Tout ce que vous me mandez de <persName ref="#Montalais">la Marans</persName> est
+               divin, et des punitions qu'elle aura dans l'enfer; mais savez-vous bien que vous irez
+               avec elle, si vous continuez à la haïr? Songez que vous serez toute l'éternité
+               ensemble; il n'en faut pas davantage pour vous mettre dans le dessein de faire votre
+               salut : je me suis avisée bien heureusement de vous donner cette pensée, c'est une
+               inspiration de Dieu. Elle vint l'autre jour chez <persName ref="#LaFayette">madame de
+                  La Fayette</persName>; <persName ref="#LaRochefoucauld">M. de La
+                  Rochefoucauld</persName> y étoit, et moi aussi : la voilà qui entre sans coiffe ;
+               elle venoit d'être coupée, mais coupée en vrai fanfan : elle étoit poudrée, bouclée;
+               le premier appareil avoit été levé il n'y avoit pas un quart d'heure; elle étoit
+               décontenancée, sentant bien qu'elle alloit être improuvée.<persName ref="#LaFayette"
+                  >Madame de La Fayette</persName> lui dit : <said aloud="true" who="#LaFayette">«
+                  Mais vraiment il faut que vous soyez folle; mais savez-vous bien, a Madame, que
+                  vous êtes complètement ridicule? »</said>
+               <persName ref="#LaRochefoucauld">M. de La Rochefoucauld</persName> dit : <said
+                  aloud="true" who="#LaRochefoucauld">« Ma mère, ah ! Par ma foi, mère, nous n'en
+                  demeurerons pas là ; approchez un peu, ma mère; que je voie si vous êtes comme
+                  votre sœur <note><persName ref="#Montalais">Mademoiselle de Montalais</persName>,
+                     qui avoit été fille d'honneur de <persName ref="#Henriette_dAngleterre">madame
+                        Henriette d'Angleterre</persName>. <emph>M.</emph></note> que je viens de
+                  voir. »</said> Sa sœur venoit aussi d'être coupée. <said aloud="true"
+                  who="SoeurDeLaRocheFoucauld">« Ma mère, vous voilà bien. »</said> Vous entendez
+               ces tons-là; et pour les paroles, elles sont d'après le naturel ; pour moi, je riois
+               sous ma coiffe. Elle se décontenança si fort, qu'elle ne put soutenir cette attaque ;
+               elle remit sa coiffe, et bouda jusqu'à ce que <persName ref="#Schomberg">madame de
+                  Schomberg</persName> la vînt reprendre, car il n'y a plus de voiture que celle-là.
+               Je crois que ce récit vous divertira.</p>
+            <p>Nous passâmes, il y a quelques jours, une après-dinée à <placeName ref="#LArsenal"
+                  >l'Arsenal</placeName> fort agréablement : il y avoit des hommes de toutes
+               grandeurs; mesdames de <persName ref="#LaFayette">La Fayette</persName>, <persName
+                  ref="#Coulanges">de Coulanges</persName>, <persName ref="#LaTroche">de La
+                  Troche</persName>, <persName ref="#Meri">mademoiselle de Méri</persName> et moi.
+               On se promena, on parla fort de vous à plusieurs reprises et en très bons termes.
+               Nous allons aussi quelquefois au <placeName ref="#LuxembourgPalais"
+                  >Luxembourg</placeName> ; <persName ref="Longueville">M. de Longueville</persName>
+               y étoit hier ; il me pria de vous assurer de ses très humbles services. Pour
+                  <persName ref="#LaRochefoucauld">M. de La Rochefoucauld</persName>, il vous aime
+               très tendrement. Je suis ravie que vous ayez approuvé mes lettres ; vos approbations
+               et vos louanges sincères me font un plaisir qui surpasse tout ce qui me vient
+               d'ailleurs ; et pourquoi les filles comme vous n'oseroient-elles louer une mère comme
+               moi? Quelle sorte de respect ! Vous savez si j'estime fort votre goût. J'approuve
+               votre loterie, vous me manderez ce que vous aurez gagné. Vos comédies doivent aussi
+               vous divertir. Laissez-vous amuser, suivez le courant des plaisirs qu'on peut avoir
+               en <placeName ref="#Provence">Provence</placeName>. Je vous loue fort que vous ne
+               reconduisiez point ; c'étoit pour mourir ; que les dames s'en vengent, qu'elles ne
+               vous reconduisent point aussi, et voilà une maudite coutume abolie.</p>
+            <p>Je viens de <placeName ref="#StGermain">Saint-Germain</placeName>; je n'ai que le
+               loisir de vous dire que mille personnes m'ont priée de vous faire des baisermains.
+                  <persName ref="#Montausier">M. de Montausier</persName>, le <persName
+                  ref="#BellefondsMarechal">maréchal de Bellefonds</persName>, etc. <persName
+                  ref="#LouisdeFrance">Mgr le dauphin</persName> m'a donné un baiser pour vous.</p>
+            <closer>Adieu, ma très-chère, il est tard ; je fais de la prose avec une facilité qui
+               vous tue.</closer>
+         </div>
+         <div type="letter" n="151">
+            <head>LETTRE CLI.</head>
+            <!-- Il aurait été bien de préçiser qui est l'émetteur de la lettre et qui est le destinataire -->
+            <opener>DE <persName ref="#SevigneMarquise">MADAME DE SÉVIGNÉ</persName> A <persName
+                  ref="GrignanComtesse">MADAME DE GRIGNAN</persName>. <dateline>A <placeName
+                     ref="#Paris">Paris</placeName>, <date when-iso="24-04-1671">vendredi 24 avril
+                     1671</date>.</dateline>
+            </opener>
+            <p>Voilà le plus beau temps du monde ; il commença dès hier après des pluies
+               épouvantables : c'est le bonheur du roi ; il y a longtemps que nous l'avons observé ;
+               et c'est pour cette fois aussi le bonheur de <persName ref="#GrandConde">M. le
+                  prince</persName>, qui a pris ses mesures à <placeName ref="#Chantilly"
+                  >Chantilly</placeName> pour le printemps et pour l'été ; la pluie d'avant-hier
+               auroit rendu toutes ses dépenses ridicules. <persName ref="#LouisXIV">Sa
+                  Majesté</persName> y arriva hier au soir; elle y est aujourd'hui. <persName
+                  ref="DHacqueville">D'Hacqueville</persName> y est allé, il vous fera une relation
+               à son retour; pour moi, j'en attends ce soir une petite que je vous enverrai avec
+               cette lettre, que j'écris le matin avant que d'aller en bavardin ; je ferai mon
+               paquet au faubourg. Si l'on dit que nous parlons dans nos lettres de la pluie et du
+               beau temps, on aura raison ; j'en ai fait d'abord un assez grand chapitre. Vous ne me
+               parlez point assez de vous : j'en suis nécessiteuse, comme vous l'êtes de folies ; je
+               vous souhaite toutes celles que j'entends, pour celles que je dis, elles ne valent
+               plus rien depuis que vous ne m'aidez plus : vous m'en inspirez, et quelquefois aussi
+               je vous en inspire. C'est une longue tristesse, et qui se renouvelle souvent, que
+               d'être loin d'une personne comme vous. J'ai dit des adieux depuis quelques jours; ce
+               qui est plaisant, c'est qu'en partant d'ici pour la <placeName ref="#Bretagne"
+                  >Bretagne</placeName>, je prévois que vous serez mon adieu sensible, dont je
+               pourrois, si j'étois une friponne, faire un grand honneur à mes amies ; mais on voit
+               clair à travers mes paroles, et je ne veux pas même en mettre aucune au-devant des
+               sentiments que j'ai pour vous. Je serai donc touchée de voir que ce n'est pas assez
+               d'être à deux cents lieues de vous, il faut que j'en sois à trois cents ; et tous les
+               pas que je ferai, ce sera sur cette troisième centaine : c'est trop ; cela me serre
+               le cœur.</p>
+            <p><persName ref="#AbbeTestu">L'abbé Têtu</persName> entra hier chez <persName
+                  ref="Richelieu">madame de Richelieu</persName> comme j'y étois : il étoit d'une
+               gaillardise qui faisoit honte à ses amis éloignés ; je lui parlai de mon voyage ; il
+               ne changea point de ton, et d'un visage riant : <said aloud="true" who="#AbbeTestu"
+                  >Hé bien! Madame</said>, me dit-il, <said aloud="true" who="#AbbeTestu">nous nous
+                  reverrons.</said> Cela n'est point plaisant à écrire, mais il n'y eut pas moyen de
+               l'entendre sans rire; enfin ce fut là son unique pensée : il passa légêrement sur
+               toute mon absence , et ne trouva que ce mot à me dire. Nous nous en servons
+               présentement dans nos adieux, et je m'en sers moi-même intérieurement, en songeant à
+               vous; mais ce n'est pas si gaiement, et la longueur de l'absence n'est pas une
+               circonstance que j'oublie.</p>
+            <p>J'ai acheté pour me faire une robe-de-chambre une étoffe comme votre dernière jupe ;
+               elle est admirable : il y a un peu de vert, et c'est le violet qui domine ; en un
+               mot, j'ai succombé. On vouloit me la faire doubler de couleur de feu, mais j'ai
+               trouvé que cela avoit l'air d'une impénitence finale : le dessus est la pure
+               fragilité, mais le dessous eût été une volonté déterminée qui m'a paru contre les
+               bonnes mœurs ; je me suis jetée dans le taffetas blanc; ma dépense est petite, je
+               méprise la <placeName ref="#Bretagne">Bretagne</placeName>, et n'en veux faire que
+               pour la <placeName ref="#Provence">Provence</placeName>, afin de soutenir la dignité
+               d'une merveille d'entre deux âges, où vous m'avez élevée.</p>
+            <p><persName ref="#Ludres">Madame de Ludres</persName> me fit l'autre jour des
+               merveilles à <placeName ref="#StGermainEnLaye">Saint-Germain</placeName> ; il n'y
+               avoit nulle distraction ; elle vous aimoit aussi : Ah ! pour <persName
+                  ref="#GrignanComtesse">madame de Grignan</persName>, elle est adorable. <persName
+                  ref="#BrancasComte">Brancas</persName> me conta une affaire que <persName
+                  ref="#GrignanComte">M. de Grignan</persName> eut cet hiver avec <persName
+                  ref="#LePremier">M. Le Premier</persName> : Je suis pour <persName
+                  ref="#GrignanComte">Grignan</persName>, j'ai vu leurs lettres. Ce <persName
+                  ref="#BrancasComte">Brancas</persName> vous a écrit une grand' diablesse de
+               lettre, plaisante, mais inlisible : il m'en a dit des morceaux ; nous devons prendre
+               un jour pour la lire tout entière. <persName ref="#GarnierDeSalins">M. de
+                  Salins</persName><note>Garnier-de-Salins, frère de Suzanne Garnier, femme de
+                  Charles, <persName ref="#BrancasComte">comte de Brancas</persName>, connu par ses
+                  distractions. Leur père s'appeloit Matthieu Garnier ; il étoit trésorier des
+                  parties casuelles. <emph>M.</emph></note> l'a chassé un portier : je ne sais ce
+               qu'on dit ; on parle de manteau gris, de quatre heures du matin, de coups de plat
+               d'épée, et l'on se tait du reste <note>Allusion à ce vers de Corneille, dans
+                     <emph>Cinna</emph>, acte IV, scène 5 : <emph>On parle d'eaux, de Tibre, et l'on
+                     se tait du reste</emph>. <emph>M.</emph></note>; on parle d'un certain apôtre
+               qui en a fait d'autres ; enfin je ne dis rien : on ne m'accusera pas de parler ; pour
+               moi, je sais me taire. Si cette fin vous paroît un peu galimatias, vous ne l'en
+               aimerez que mieux.</p>
+            <closer>Adieu, ma chère enfant ; je vous manderai ce soir des nouvelles en fermant mon
+               paquet.</closer>
+         </div>
+         <div type="letter" n="152">
+            <head>LETTRE CLII.</head>
+            <opener>DE <persName ref="#SevigneMarquise">MADAME DE SÉVIGNÉ</persName> A <persName
+                  ref="GrignanComtesse">MADAME DE GRIGNAN</persName>. <dateline><date
+                     when-iso="24-04-1671">Vendredi au soir, 24 avril 1671</date>, <placeName
+                     ref="#ChezLaRochefoucauld">chez M. DE LA ROCHEFOUCAULD</placeName>.</dateline>
+            </opener>
+            <p>Je fais donc ici mon paquet. J'avois dessein de vous conter que <persName
+                  ref="#LouisXIV">le roi</persName> arriva hier au soir à <placeName
+                  ref="#Chantilly">Chantilly</placeName> ; il courut un cerf au clair de la lune ;
+               les lanternes firent des merveilles ; le feu d'artifice fut un peu effacé par la
+               clarté de notre amie ; mais enfin, le soir, le souper, le jeu, tout alla à merveille.
+               Le temps qu'il a fait aujourd'hui nous faisoit espérer une suite digne d'un si
+               agréable commencement. Mais voici ce que j'apprends en entrant ici, dont je ne puis
+               me remettre, et qui fait que je ne sais plus ce que je vous mande ; c'est qu'enfin
+                  <persName ref="#Vatel">Vatel</persName>, le grand Vatel, maître d'hôtel de
+                  <persName ref="#Fouquet">M. Fouquet</persName>, qui l'étoit présentement de
+                  <persName ref="#GrandConde">M. le prince</persName>, cet homme d'une capacité
+               distinguée de toutes les autres, dont la bonne tête étoit capable de contenir tout le
+               soin d'un état ; cet homme donc que je connoissois, voyant que ce matin à huit heures
+               la marée n'étoit pas arrivée, n'a pu soutenir l'affront dont il a cru qu'il alloit
+               être accablé, et, en un mot, il s'est poignardé. Vous pouvez penser l'horrible
+               désordre qu'un si terrible accident a causé dans cette fête. Songez que la marée est
+               peut-être arrivée comme il expiroit. Je n'en sais pas davantage présentement : je
+               pense que vous trouvez que c'est assez. Je ne doute pas que la confusion n'ait été
+               grande ; c'est une chose fâcheuse à une fête de cinquante mille écus.</p>
+            <p><persName ref="#Menars">M. de Menars</persName> épouse <persName
+                  ref="#LaGrangeNeuvilleM">mademoiselle de La Grange-Neuville</persName>
+               <note>Marie, fille du troisième lit de <persName ref="#LaGrangeNeuvilleC">Charles de
+                     La Grange-Neuville</persName>, maître des comptes; elle étoit soeur-germaine de
+                     <persName ref="#Frontenac">madame de Frontenac</persName>.
+                  <emph>M.</emph></note> ; je ne sais comme j'ai le courage de vous parler d'autre
+               chose que de <persName ref="#Vatel">Vatel</persName>.</p>
+         </div>
+         <div type="letter" n="153">
+            <head>LETTRE CLIII.</head>
+            <opener> DE <persName ref="#SevigneMarquise">MADAME DE SÉVIGNÉ</persName> A <persName
+                  ref="GrignanComtesse">MADAME DE GRIGNAN</persName>. <dateline>A <placeName
+                     ref="#Paris">Paris</placeName>, <date when-iso="26-04-1671">dimanche 26 avril
+                     1671</date>.</dateline>
+            </opener>
+            <p>Il est dimanche 26 avril; cette lettre ne partira que mercredi ; mais ce n'est pas
+               une lettre, c'est une relation que <persName ref="#Moreuil">Moreuil</persName> vient
+               de me faire, à votre intention, de ce qui s'est passé à <placeName ref="#Chantilly"
+                  >Chantilly</placeName> touchant <persName ref="#Vatel">Vatel</persName>. Je vous
+               écrivis vendredi qu'il s'étoit poignardé ; voici l'affaire en détail : <persName
+                  ref="#LouisXIV">Le roi</persName> arriva le jeudi au soir ; la promenade, la
+               collation dans un lieu tapissé de jonquilles, tout cela fut à souhait. On soupa, il y
+               eut quelques tables où le rôti manqua, à cause de plusieurs dîners à quoi l'on ne
+               s'étoit point attendu ; cela saisit <persName ref="#Vatel">Vatel</persName>, il dit
+               plusieurs fois : Je suis perdu d'honneur ; voici un affront que je ne supporterai
+               pas. Il dit à <persName ref="#Gourville">Gourville</persName> : La tête me tourne, il
+               y a douze nuits que je n'ai dormi ; aidez-moi a donner des ordres. <persName
+                  ref="#Gourville">Gourville</persName> le soulagea en ce qu'il put. Le rôti qui
+               avoit manqué, non pas à la table du roi, mais aux vingtcinquièmes, lui revenoit
+               toujours à l'esprit. <persName ref="#Gourville">Gourville</persName> le dit à
+                  <persName ref="#GrandConde">M. le prince</persName>. <persName ref="#GrandConde"
+                  >M. le prince</persName> alla jusque dans la chambre de <persName ref="#Vatel"
+                  >Vatel</persName>, et lui dit : <said aloud="true" who="#GrandConde">« <persName
+                     ref="#Vatel">Vatel</persName>, tout va bien, rien n'étoit si beau que le souper
+                  du <persName ref="#LouisXIV">roi</persName>. »</said> Il répondit : <said
+                  aloud="true" who="#Vatel">« Monseigneur, votre bonté m'achève ; je sais que le
+                  rôti a manqué à deux tables. »</said>
+               <said aloud="true" who="#GrandConde">« Point du tout</said>, dit <persName
+                  ref="#GrandConde">M. le prince</persName>, <said aloud="true" who="#GrandConde">ne
+                  vous fâchez point, tout va bien. »</said> Minuit vint, le feu d'artifice ne
+               réussit pas, il fut couvert d'un nuage ; il coûtoit seize mille francs. A quatre
+               heures du matin, <persName ref="#Vatel">Vatel</persName> s'en va partout, il trouve
+               tout endormi, il rencontre un petit pourvoyeur qui lui apportoit seulement deux
+               charges de marée; il lui demande : <said aloud="true" who="#Vatel">Est-ce là
+                  tout?</said>
+               <said aloud="true" who="pourvoyeur">Oui, Monsieur</said>. Il ne savoit pas que
+                  <persName ref="#Vatel">Vatel</persName> avoit envoyé à tous les ports de mer.
+                  <persName ref="#Vatel">Vatel</persName> attend quelque temps ; les autres
+               pourvoyeurs ne vinrent point ; sa tête s'échauffoit, il crut qu'il n'auroit point
+               d'autre marée; il trouva <persName ref="#Gourville">Gourville</persName>, il lui dit:
+                  <said aloud="true" who="#Vatel">Monsieur, je ne survivrai point à cet
+                  affront-ci</said> ; <persName ref="#Gourville">Gourville</persName> se moqua de
+               lui. <persName ref="#Vatel">Vatel</persName> monte à sa chambre, met son épée contre
+               la porte, et se la passe au travers du cœur ; mais ce ne fut qu'au troisième coup,
+               car il s'en donna deux qui n'étoient point mortels ; il tombe mort. La marée
+               cependant arrive de tous côtés; on cherche <persName ref="#Vatel">Vatel</persName>
+               pour la distribuer, on va à sa chambre, on heurte, on enfonce la porte, on le trouve
+               noyé dans son sang ; on court à <persName ref="#GrandConde">M. le prince</persName>
+               qui fut au désespoir. <persName ref="#LaRochefoucauld">M. le duc</persName> pleura ;
+               c'étoit sur <persName ref="#Vatel">Vatel</persName> que tournoit tout son voyage de
+               Bourgogne. <persName ref="#GrandConde">M. le prince</persName> le dit au <persName
+                  ref="#LouisXIV">roi</persName> fort tristement : on dit que c'étoit à force
+               d'avoir de l'honneur à sa manière ; on le loua fort, on loua et l'on blâma son
+               courage <note>On connoît l'épisode que cette lettre a fourni à <persName
+                     ref="#Berchoux">M. Berchoux</persName>, dans son joli poême de la Gastronomie.
+                  <emph>M.</emph></note>. <persName ref="#LouisXIV">Le roi</persName> dit qu'il y avoit cinq ans
+               qu'il retardoit de venir à <placeName ref="#Chantilly">Chantilly</placeName>, parce
+               qu'il comprenoit l'excès de cet embarras. Il dit à <persName ref="#GrandConde">M. le
+                  prince</persName> qu'il ne devoit avoir que deux tables, et ne point se charger de
+               tout ; il jura qu'il ne souffriroit plus que <persName ref="#GrandConde">M. le
+                  prince</persName> en usât ainsi ; mais c'étoit trop tard pour le pauvre <persName
+                  ref="#Vatel">Vatel</persName>. Cependant <persName ref="#Gourville"
+                  >Gourville</persName> tâcha de réparer la perte de <persName ref="#Vatel"
+                  >Vatel</persName> ; elle fut réparée: on dîna très-bien, on fit collation, on
+               soupa, on se promena, on joua, on fut à la chasse ; tout étoit parfumé de jonquilles,
+               tout étoit enchanté <note><persName ref="#Gourville">Gourville</persName> dit dans
+                  ses Mémoires que cette fête coûta à <persName ref="#GrandConde">M. le
+                     prince</persName> cent quatre-vingt et tant de mille livres. <emph>M.</emph></note>. Hier,
+               qui étoit samedi, on fit encore de même ; et le soir, <persName ref="#LouisXIV">le
+                  roi</persName> alla à <placeName ref="#Liancourt">Liancourt</placeName>, où il
+               avoit commandé media noche ; il y doit demeurer aujourd'hui. Voilà ce que <persName
+                  ref="#Moreuil">Moreuil</persName> m'a dit, espérant que je vous le manderois. Je
+               jette mon bonnet par-dessus les moulins, et je ne sais rien du reste. <persName
+                  ref="#DHacqueville">M. d'Hacqueville</persName>, qui étoit à tout cela, vous fera
+               des relations sans doute ; mais comme son écriture n'est pas si lisible que la
+               mienne, j'écris toujours ; et si je vous mande cette infinité de détails, c'est que
+               je les aimerois en pareille occasion.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
